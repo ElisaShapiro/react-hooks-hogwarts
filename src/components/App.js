@@ -9,7 +9,13 @@ function App() {
 		<div className="App">
 			<Nav />
 			{hogs.map((hog) => {
-				return <Tile className={"pigTile"} key={hog.name} name={hog.name} specialty={hog.specialty} greased={hog.greased} weight={hog.weight} medal={"highest medal achieved"} image={hog.image}/> 
+				return <Tile className={"pigTile"}
+					key={hog.name}
+					name={hog.name}
+					specialty={hog.specialty}
+					greased={hog.greased}
+					weight={hog.weight}
+					medal={"highest medal achieved"} image={hog.image} />
 			})}
 		</div>
 	);
